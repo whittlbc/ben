@@ -1,0 +1,28 @@
+# = Live Objects (Sources) ------------------------------
+
+[objects.ProfileCreated]
+id = 'goerli.contracts.ben.Registry.ProfileCreated@0x1e28352ff00d67474b59b87e6817d6ba65daa0130446266db8640214d8b80609'
+
+# = Live Columns (Outputs) ------------------------------
+
+[tables.public.profile_created_events]
+transaction_hash = 'ProfileCreated.transactionHash'
+log_index = 'ProfileCreated.logIndex'
+profile_id = 'ProfileCreated.profileId'
+nonce = 'ProfileCreated.nonce'
+name = 'ProfileCreated.name'
+metadata = 'ProfileCreated.metadata'
+owner = 'ProfileCreated.owner'
+anchor = 'ProfileCreated.anchor'
+contract_name = 'ProfileCreated.contractName'
+contract_address = 'ProfileCreated.contractAddress'
+block_hash = 'ProfileCreated.blockHash'
+block_number = 'ProfileCreated.blockNumber'
+block_timestamp = 'ProfileCreated.blockTimestamp'
+chain_id = 'ProfileCreated.chainId'
+
+# = Links & Filters --------------------------------------
+
+[[objects.ProfileCreated.links]]
+table = 'public.profile_created_events'
+uniqueBy = [ 'transactionHash', 'logIndex' ]
