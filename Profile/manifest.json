@@ -1,7 +1,7 @@
 {
     "namespace": "ben",
     "name": "Profile",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "displayName": "Profiles",
     "description": "..",
     "chains": [
